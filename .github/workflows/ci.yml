@@ -63,3 +63,8 @@ jobs:
     steps:
       - name: Placeholder deployment
         run: echo "would deploy"
+  access :
+      runs-on: ubuntu-latest
+      steps:
+        - name : reading secret 
+          run : echo ${{secret.TEST}}
